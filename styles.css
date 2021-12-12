@@ -3,3 +3,14 @@ ul {
     justify-content: space-between;
     padding: 0px 500px;
 }
+
+.top>ul>li {
+    list-style-type: none;
+}
+
+.names-list {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 0px 200px;
+}
