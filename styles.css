@@ -14,3 +14,22 @@ ul {
     justify-content: space-between;
     padding: 0px 200px;
 }
+
+.middle {
+    height:10rem;
+}
+
+.fas {
+    color: aliceblue;
+}
+
+.fas:hover {
+    color: aqua;
+}
+
+footer {
+    border-radius: 20px;
+    padding: 10px 50px;
+    background: rgb(37, 90, 170);
+    color: rgb(255, 255, 255);
+}
