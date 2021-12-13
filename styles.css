@@ -57,6 +57,13 @@ h2 {
 form {
     padding: 100px 500px;
 }
+
+.form {
+    display: flex;
+    padding: 20px;
+    line-height: 40px;
+}
+
 /*Styling The Fontawesome Icon*/
 .fas {
     color: aliceblue;
