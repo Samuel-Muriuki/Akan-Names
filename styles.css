@@ -64,6 +64,14 @@ form {
     line-height: 40px;
 }
 
+input[type="date"] {
+    color: mediumorchid;
+}
+
+option {
+    color: mediumorchid;
+}
+
 /*Styling The Fontawesome Icon*/
 .fas {
     color: aliceblue;
