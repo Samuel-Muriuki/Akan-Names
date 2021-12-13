@@ -2,7 +2,7 @@
 
 ##### By Samuel-Muriuki
 
-![Website Image]()
+![Website Image](imgs/webPage.png)
 ### It is a description of the Website page.
 
 ## Table of Contents
