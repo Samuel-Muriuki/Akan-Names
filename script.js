@@ -78,4 +78,5 @@ function akanNames() {
     document.getElementById("display").innerHTML = "Thank You!";
   }
   //Refreshing the function
+  formRefresh();
 }
