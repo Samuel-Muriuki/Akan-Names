@@ -17,7 +17,7 @@
     <div id="topp" class="top">
       <ul>
         <li>Welcome</li>
-        <li>Check Birthday</li>
+        <li><a href="#midd">Check Birthday</a></li>
       </ul>
       <p>
         Hi user, wan't to find you Akan name. You are in the right place. <br />
@@ -60,20 +60,23 @@
 
 
      <!--==================== The Middle Section ====================-->
-    <div id="midd" class="middle">
+    <form id="midd" class="middle">
       <div class="form">
-        <form action="">
-          <input type="date" id="dob"/>
-        </form>
+        <label>Enter your Date Of Birth</label>  
+        <input type="date" id="dob"/>
+       
+       <div class="select">
+         <label>Choose your Gender</label>
         <select name="" id="gender">
           <option>Enter your Gender</option>
           <option>Male</option>
           <option>Female</option>
         </select>
+       </div>
       </div>
-      <button onclick="">Find Out</button>
+      <button onclick="akanNames()" type="button">Find Out</button>
       <h3 id="display"></h3>
-    </div>
+    </form>
 
      <!--==================== The Footer Section ====================-->
     <footer>
@@ -86,5 +89,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

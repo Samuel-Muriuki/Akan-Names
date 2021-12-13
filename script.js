@@ -1,28 +1,21 @@
 // In the event of button click
 function formRefresh() {
-  document.getElementById("midd").requestFullscreen();
+  document.getElementById("midd").reset();
 }
 
 function akanNames() {
-  var dateOfBirth = document.getElementById("dob").ariaValueMax;
+  var dateOfBirth = document.getElementById("dob").value;
   var actualDateEntered = dateOfBirth.split("-");
   var day = parseInt(actualDateEntered[2]);
   var month = parseInt(actualDateEntered[1]);
   var year = parseInt(actualDateEntered[0]);
 
   // Calculating the Century
-  var century = (year - 1) / 100 + 1;
-  var dayOfTheWeek =
-    (century / 4 -
-      2 * century -
-      1 +
-      (5 * year) / 4 +
-      (26 * (month + 1)) / 10 +
-      day) %
-    7;
+  var century = (year-1)/100+1;
+  var dayOfTheWeek = (century/4-2 * century-1 +5 * year/4 + 26 * (month + 1)/10 +day) %7;
 
   //Naming and Day Display
-  document.getElementById("display").innerHTML = Math.random(dayOfTheWeek);
+  document.getElementById("display").innerHTML = Math.round(dayOfTheWeek);
   var masculineNames = [
     "Kwasi",
     "Kwadwo",
@@ -41,7 +34,7 @@ function akanNames() {
     "Afua",
     "Ama",
   ];
-  var gender = document.getElementById("gender").ariaValueMax;
+  var gender = document.getElementById("gender").value;
   var daysOfTheWeek = [
     "Sunday",
     "Monday",
@@ -51,7 +44,7 @@ function akanNames() {
     "Friday",
     "Saturday",
   ];
-  var dayOfWeek = Math.random(dayOfTheWeek);
+  var dayOfWeek = Math.round(dayOfTheWeek);
 
   // Validating the form and its output
   if (!isNaN(dayOfWeek)) {

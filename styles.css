@@ -1,7 +1,32 @@
+body {
+    background: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    color: maroon;
+}
+
 ul {
     display: flex;
     justify-content: space-between;
     padding: 0px 500px;
+}
+
+ul>li {
+    font-weight: 700;
+    color: rgb(0, 60, 255);
+}
+
+ul>li>a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 60, 255);
+}
+
+ul>li>a:hover {
+    color: dodgerblue;
+}
+
+ul>li:hover {
+    color: dodgerblue;
 }
 
 .top>ul>li {
@@ -15,8 +40,22 @@ ul {
     padding: 0px 200px;
 }
 
+.top>p {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 60, 255);
+}
+
 .middle {
-    height:10rem;
+    height:15rem;
+    
+}
+
+form {
+    padding: 100px 500px;
 }
 
 .fas {
