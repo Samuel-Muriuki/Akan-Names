@@ -1,9 +1,10 @@
+/* Styling the entire page*/
 body {
     background: aquamarine;
     font-family: 'Courier New', Courier, monospace;
     color: maroon;
 }
-
+/*Styling the Navigation Bar*/
 ul {
     display: flex;
     justify-content: space-between;
@@ -32,7 +33,7 @@ ul>li:hover {
 .top>ul>li {
     list-style-type: none;
 }
-
+/*List Of Akan Names*/
 .names-list {
     display: flex;
     width: 50%;
@@ -51,13 +52,12 @@ h2 {
 
 .middle {
     height:15rem;
-    
 }
-
+/*Styling the user input form*/
 form {
     padding: 100px 500px;
 }
-
+/*Styling The Fontawesome Icon*/
 .fas {
     color: aliceblue;
 }
@@ -65,7 +65,7 @@ form {
 .fas:hover {
     color: aqua;
 }
-
+/*Beginning of The Footer Styling*/
 footer {
     border-radius: 20px;
     padding: 10px 50px;
