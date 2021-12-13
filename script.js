@@ -18,3 +18,7 @@ var dayOfTheWeek = (century/4-2*century-1 + 5*year/4 + 26*(month+1)/10 + day % 7
 //Naming and Day Display
 document.getElementById("display").innerHTML = Math.random(dayOfTheWeek);
 var masculineNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var feminineNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua","Ama"];
+var gender = document.getElementById("gender").ariaValueMax;
+var daysOfTheWeek = ["Sunday", "Monday","Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+var dayOfWeek = Math.random(dayOfTheWeek);
