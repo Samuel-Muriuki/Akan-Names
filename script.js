@@ -13,7 +13,7 @@ function akanNames(){
 
 // Calculating the Century
 var century = (year-1)/100+1;
-var dayOfTheWeek = (century/4-2*century-1 + 5*year/4 + 26*(month+1)/10 + day % 7;
+var dayOfTheWeek = (century/4-2*century-1 + 5*year/4 + 26*(month+1)/10 + day) % 7;
 
 //Naming and Day Display
 document.getElementById("display").innerHTML = Math.random(dayOfTheWeek);
@@ -22,3 +22,17 @@ var feminineNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua","Ama"];
 var gender = document.getElementById("gender").ariaValueMax;
 var daysOfTheWeek = ["Sunday", "Monday","Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
 var dayOfWeek = Math.random(dayOfTheWeek);
+
+// Validating the form and its output
+if(!isNaN(dayOfWeek)){
+    if(gender === "Male"){
+        document.getElementById("display").innerHTML = "Your Akan Name is" + masculineNames[Math.round(dayOfTheWeek)] + "and you were born on" + daysOfTheWeek[dayOfWeek];
+    }
+    else if(gender ==="Female"){
+        document.getElementById("display").innerHTML = "Your Akan Name is" + feminineNames[Math.round(dayOfTheWeek)] + "and you were born on" + daysOfTheWeek[dayOfWeek];
+    }
+    else {
+        alert("Enter valid dates and choose your gender!");
+        document.getElementById("display").innerHTML = "Thank You!";
+    }
+}
