@@ -52,13 +52,13 @@ function akanNames() {
       document.getElementById("display").innerHTML =
         "Your Akan Name is " +
         masculineNames[Math.round(dayOfTheWeek)] +
-        " and you were born on " + " " +
+        " and you were born on -" + " " +
         daysOfTheWeek[dayOfWeek];
     } else if (gender === "Female") {
       document.getElementById("display").innerHTML =
         "Your Akan Name is " + 
         feminineNames[Math.round(dayOfTheWeek)] +
-        " and you were born on" + " " +
+        " and you were born on -" + " " +
         daysOfTheWeek[dayOfWeek];
     }
     else {
